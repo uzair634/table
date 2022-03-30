@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+</head>
+<body>
+    <style>
+.navbar{
+    background-color:black;
+border-radius: 30px;    
+}
+.navbar li a{
+    text-decoration: none;
+    color: red;
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    padding: 16px 10px;
+margin: 3px;
+    display: flex;
+    float: left;
+}
+.search{
+    padding: 10px;
+}
+
+.slider{
+    height: 60vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        animation: slider 10s infinite;
+}
+    </style>
+    <nav class="navbar">
+        <ul>
+<li><a href="">home</a></li>
+            <li><a href=""> details</a></li>
+            <li><a href=""> About</a></li>
+            <li><a href=""> contact us</a></li>
+            <div class "search"> 
+                <input type="text" class="search" id="search" placeholder="Search Here">
+            </div>
+        </ul>
+        @keyframe slider{
+            0%{
+            background-color:black;
+            }
+            25%{
+                background-color:blue;
+            }
+            50%{
+                background-color:yellow;
+            }
+            75%{
+                background-color:pink;
+            }
+            100%{
+                background-color:green;
+            }
+        }
+    </nav>
+
+    
+</body>
+</html>
